@@ -19,9 +19,8 @@
         <li class="sidebar-brand"><a href="#page-top">대구 사진 비엔날레</a></li>
         <li class="sidebar-nav-item"><a href="#page-top">포스터</a></li>
         <li class="sidebar-nav-item"><a href="#about">전시 소개</a></li>
-        <li class="sidebar-nav-item"><a href="#services">Services</a></li>
-        <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
-        <li class="sidebar-nav-item"><a href="#daumRoughmapContainer1658403129264">Contact</a></li>
+        <li class="sidebar-nav-item"><a href="#portfolio">작품 소개</a></li>
+        <li class="sidebar-nav-item"><a href="#map">찾아오시는 길</a></li>
     </ul>
 </nav>
 <!-- Header-->
@@ -60,69 +59,119 @@
 
 <!-- Portfolio-->
 <section class="content-section" id="portfolio">
-    <div class="container px-4 px-lg-5">
-        <div class="content-section-heading text-center">
-            <h3 class="text-secondary mb-0">Portfolio</h3>
-            <h2 class="mb-5">Recent Projects</h2>
-        </div>
-        <div class="row gx-0">
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#!">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="h2">Stationary</div>
-                            <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="..."/>
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#!">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="h2">Ice Cream</div>
-                            <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="..."/>
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#!">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="h2">Strawberries</div>
-                            <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="..."/>
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#!">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="h2">Workspace</div>
-                            <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..."/>
-                </a>
+    <div class="container px-4 px-lg-5 text-center">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-10">
+                <h3>작품 소개</h3>
+                <br><br>
             </div>
         </div>
     </div>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/portfolio-1.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/portfolio-2.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/portfolio-3.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 </section>
-<div id="daumRoughmapContainer1658914781240" class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%"></div>
-<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-<script charset="UTF-8">
-    new daum.roughmap.Lander({
-        "timestamp" : "1658914781240",
-        "key" : "2b6o2",
-        // "mapWidth" : "640",
-        "mapHeight" : "360"
-    }).render();
-</script>
+<!--<section class="content-section" id="portfolio">-->
+<!--    <div class="container px-4 px-lg-5">-->
+<!--        <div class="content-section-heading text-center">-->
+<!--            <h3 class="text-secondary mb-0">Portfolio</h3>-->
+<!--            <h2 class="mb-5">Recent Projects</h2>-->
+<!--        </div>-->
+<!--        <div class="row gx-0">-->
+<!--            <div class="col-lg-6">-->
+<!--                <a class="portfolio-item" href="#!">-->
+<!--                    <div class="caption">-->
+<!--                        <div class="caption-content">-->
+<!--                            <div class="h2">Stationary</div>-->
+<!--                            <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="..."/>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--            <div class="col-lg-6">-->
+<!--                <a class="portfolio-item" href="#!">-->
+<!--                    <div class="caption">-->
+<!--                        <div class="caption-content">-->
+<!--                            <div class="h2">Ice Cream</div>-->
+<!--                            <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="..."/>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--            <div class="col-lg-6">-->
+<!--                <a class="portfolio-item" href="#!">-->
+<!--                    <div class="caption">-->
+<!--                        <div class="caption-content">-->
+<!--                            <div class="h2">Strawberries</div>-->
+<!--                            <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="..."/>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--            <div class="col-lg-6">-->
+<!--                <a class="portfolio-item" href="#!">-->
+<!--                    <div class="caption">-->
+<!--                        <div class="caption-content">-->
+<!--                            <div class="h2">Workspace</div>-->
+<!--                            <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..."/>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<div id="map">
+    <div id="daumRoughmapContainer1658914781240" class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%"></div>
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+    <script charset="UTF-8">
+        new daum.roughmap.Lander({
+            "timestamp" : "1658914781240",
+            "key" : "2b6o2",
+            // "mapWidth" : "640",
+            "mapHeight" : "360"
+        }).render();
+    </script>
+</div>
 
 <!-- Footer-->
 <footer class="footer text-center">
