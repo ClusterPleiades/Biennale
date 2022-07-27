@@ -6083,7 +6083,7 @@ textarea.form-control-lg {
   text-align: center;
   background: none;
   border: 0;
-  opacity: 0.5;
+  opacity: 0.7;
   transition: opacity 0.15s ease;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -6098,7 +6098,7 @@ textarea.form-control-lg {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  opacity: 0.9;
+  opacity: 1.0;
 }
 
 .carousel-control-prev {
@@ -6180,7 +6180,16 @@ textarea.form-control-lg {
 .carousel-indicators .active {
   opacity: 1;
 }
-
+.carousel-caption-b {
+  position: absolute;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #000000;
+  text-align: center;
+}
 .carousel-caption {
   position: absolute;
   right: 15%;
@@ -6188,7 +6197,7 @@ textarea.form-control-lg {
   left: 15%;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -11302,6 +11311,9 @@ html {
   height: 100%;
 }
 
+.content-section-short {
+
+}
 .content-section {
   padding-top: 6rem;
   padding-bottom: 6rem;
