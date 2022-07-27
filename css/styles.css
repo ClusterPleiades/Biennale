@@ -11330,7 +11330,7 @@ html {
   color: #fff;
 }
 .scroll-to-top:hover {
-  background: #343a40;
+  background: rgba(52, 58, 64, 0.5);
 }
 .scroll-to-top i {
   font-weight: 800;
