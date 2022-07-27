@@ -494,7 +494,7 @@ progress {
   font-weight: 300;
 }
 .custom {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 .display-1 {
@@ -11298,8 +11298,8 @@ html {
 }
 
 .content-section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .content-section-heading h2, .content-section-heading .h2 {
