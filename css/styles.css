@@ -11516,6 +11516,7 @@ footer.footer .social-link:hover {
 }
 .poster{
   width: 100%;
+  object-fit: contain;
 }
 .masthead {
   min-height: 30rem;
