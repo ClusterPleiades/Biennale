@@ -237,11 +237,19 @@ sup {
 }
 
 a {
-  color: #62097F;
-  text-decoration: underline;
-}
+  text-decoration: none;;
+  color: #ffffff;
+  /*text-decoration: underline;*/
+}.black{
+   text-decoration: none;;
+   color: #000000;
+ }
+
 a:hover {
-  color: #17667f;
+  color: #ffffff;
+}
+a.black:hover{
+  color: #000000;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -5412,9 +5420,9 @@ textarea.form-control-lg {
   opacity: 0.75;
 }
 .btn-close:focus {
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(29, 128, 159, 0.25);
-  opacity: 1;
+  /*outline: 0;*/
+  /*box-shadow: 0 0 0 0.25rem rgba(29, 128, 159, 0.25);*/
+  /*opacity: 1;*/
 }
 .btn-close:disabled, .btn-close.disabled {
   pointer-events: none;
