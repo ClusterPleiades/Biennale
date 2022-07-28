@@ -5610,7 +5610,7 @@ textarea.form-control-lg {
   padding-top: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   /*border-top: 1px solid #dee2e6;*/
   border-bottom-right-radius: calc(0.3rem - 1px);
   border-bottom-left-radius: calc(0.3rem - 1px);
