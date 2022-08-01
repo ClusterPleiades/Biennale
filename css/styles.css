@@ -12000,10 +12000,8 @@ html {
 }
 
 .content-section {
-    min-height: calc(100%);
-    max-height: calc(100%);
-    width: calc(100%);
-    height: calc(100%);
+    width: 100%;
+    height: 100%;
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
@@ -12203,8 +12201,19 @@ footer.footer .social-link:hover {
     /*justify-content: center;*/
     filter: drop-shadow(10px 10px 10px #ececec);
 }
+
 .square {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
     width: 15%;
+}
+
+.logo {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1rem;
+    left: 32.5%;
+    width: 35%;
 }
 
 .masthead {
