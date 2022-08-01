@@ -8635,7 +8635,7 @@ textarea.form-control-lg {
 }
 .rounded-footer {
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0.5rem;
     border-radius: 0.3rem !important;
 }
 
@@ -12166,12 +12166,12 @@ footer.footer {
 .social-link {
     display: block;
     text-decoration: none;
-    height: 4rem;
-    width: 4rem;
-    line-height: 4rem;
-    font-size: 1.5rem;
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    font-size: 1.25rem;
     background-color: #62097F;
-    transition: background-color 0.15s ease-in-out;
+    /*transition: background-color 0.15s ease-in-out;*/
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
