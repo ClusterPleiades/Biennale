@@ -12013,7 +12013,7 @@ html {
 
 .scroll-to-top {
     position: fixed;
-    left: 50%;
+    left: calc(50% - 25px);
     /*right: 15px;*/
     bottom: 15px;
     /*display: none;*/
