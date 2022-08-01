@@ -49,7 +49,7 @@
     --bs-cyan: #0dcaf0;
     --bs-white: #fff;
     --bs-gray: #ecececec;
-    --bs-gray-dark: #343a40;
+    --bs-gray-dark: #616161;
     --bs-gray-100: #f8f9fa;
     --bs-gray-200: #e9ecef;
     --bs-gray-300: #dee2e6;
@@ -185,7 +185,7 @@ h6, .h6 {
 
 p {
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
 }
 
 abbr[title],
