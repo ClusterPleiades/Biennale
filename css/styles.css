@@ -4,6 +4,7 @@
     src: url('../assets/font/apple_light.woff');
     font-family: "apple_light";
     font-display: block;
+
     font-weight: 700;
 }
 
@@ -12201,6 +12202,9 @@ footer.footer .social-link:hover {
     /*align-items: center;*/
     /*justify-content: center;*/
     filter: drop-shadow(10px 10px 10px #ececec);
+}
+.square {
+    width: 15%;
 }
 
 .masthead {

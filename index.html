@@ -31,7 +31,7 @@
         <h6 style="font-family: apple_semi_bold,serif">2022년 대구사진비엔날레 특별기획전</h6>
         <h1 style="font-family: apple_bold,serif">다음시선:변신</h1>
         <br>
-        <h1 style="font-family: apple_semi_bold,serif">ㅡ v17</h1>
+        <h1 style="font-family: apple_semi_bold,serif">ㅡ v18</h1>
         <h2 style="font-family: dream_extra_bold,serif">2022.08.23-09.25</h2>
         <h5 style="font-family: apple_bold,serif">대구문화예술회관1-4전시실</h5>
         <br>
@@ -42,7 +42,10 @@
 <!-- Invitation -->
 <div class="content-section bg-gray px-4" id="invitation">
     <div class="rounded-3 bg-white text-center">
-            <h3>2022 대구사진비엔날레 특별 기획전</h3>
+        <br>
+        <img class="square" src="assets/img/square.png" alt="포스터">
+        <br>
+        <h3>모시는 글</h3>
 
         <!--        <div class="row gx-4 gx-lg-5 justify-content-center">-->
         <!--            <div class="col-lg-10">-->
@@ -226,17 +229,18 @@
     </div>
 </div>
 
-<a class="scroll-to-top rounded" onclick="changeLocation(this)"><i class="fas fa-angle-down"></i></a>
+<a class="scroll-to-top rounded" onclick="changeLocation()"><i class="fas fa-angle-down"></i></a>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/scripts.js"></script>
 <script>
-    function changeLocation(a) {
+    function changeLocation() {
         let height = window.innerHeight;
-        let remain = document.documentElement.scrollTop % height;
-        let change = height - remain;
-        if (change === 0) change = height;
-        window.scrollBy(0, change);
+        // let remain = document.documentElement.scrollTop % height;
+        // let change = height - remain;
+        // if (change === 0) change = height;
+        // window.scrollBy(0, change);
+        window.scrollBy(0, height);
     }
 
     function changeModalBody(num) {
