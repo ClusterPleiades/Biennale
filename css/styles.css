@@ -11992,7 +11992,7 @@ html {
 }
 
 .content-section {
-    width: 100%;
+    width: calc(100%);
     height: calc(100%);
     padding-top: 3rem;
     /*padding-bottom: 4.5rem;*/
