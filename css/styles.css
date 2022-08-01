@@ -8633,6 +8633,11 @@ textarea.form-control-lg {
     height: inherit;
     border-radius: 0.3rem !important;
 }
+.rounded-footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 0.3rem !important;
+}
 
 .rounded-circle {
     border-radius: 50% !important;
@@ -12158,7 +12163,7 @@ footer.footer {
     padding-bottom: 10rem;
 }
 
-footer.footer .social-link {
+.social-link {
     display: block;
     text-decoration: none;
     height: 4rem;
