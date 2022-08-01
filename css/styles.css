@@ -12105,12 +12105,12 @@ html {
     position: fixed;
     right: 15px;
     top: 15px;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     text-align: center;
     color: #fff;
     background: rgba(52, 58, 64, 0.5);
-    line-height: 40px;
+    line-height: 50px;
     z-index: 999;
 }
 
@@ -12182,7 +12182,7 @@ footer.footer .social-link:hover {
 
 .poster {
     width: 60%;
-    height: 30%;
+    /*height: 30%;*/
     object-fit: contain;
     /*object-position: center;*/
     /*overflow: hidden;*/
