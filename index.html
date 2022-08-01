@@ -31,7 +31,7 @@
         <h6 style="font-family: apple_semi_bold,serif">2022년 대구사진비엔날레 특별기획전</h6>
         <h1 style="font-family: apple_bold,serif">다음시선:변신</h1>
         <br>
-        <h1 style="font-family: apple_semi_bold,serif">ㅡ v19</h1>
+        <h1 style="font-family: apple_semi_bold,serif">ㅡ v18</h1>
         <h2 style="font-family: dream_extra_bold,serif">2022.08.23-09.25</h2>
         <h5 style="font-family: apple_bold,serif">대구문화예술회관1-4전시실</h5>
         <br>
@@ -236,12 +236,11 @@
 <script>
     function changeLocation() {
         let height = window.innerHeight;
-        let back = -1 * document.documentElement.scrollTop % height;
+        // let remain = document.documentElement.scrollTop % height;
         // let change = height - remain;
         // if (change === 0) change = height;
         // window.scrollBy(0, change);
         window.scrollBy(0, height);
-        window.scrollBy(0, back);
     }
 
     function changeModalBody(num) {
