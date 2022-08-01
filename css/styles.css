@@ -11992,6 +11992,8 @@ html {
 }
 
 .content-section {
+    min-height: calc(100%);
+    max-height: calc(100%);
     width: calc(100%);
     height: calc(100%);
     padding-top: 3rem;
