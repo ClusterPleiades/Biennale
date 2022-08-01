@@ -33,7 +33,7 @@
         <br>
         <h1 style="font-family: apple_semi_bold,serif">ㅡ</h1>
         <h2 style="font-family: dream_extra_bold,serif">2022.08.23-09.25</h2>
-        <h4 style="font-family: apple_bold,serif">대구문화예술회관1-4전시실 v8</h4>
+        <h4 style="font-family: apple_bold,serif">대구문화예술회관1-4전시실 v9</h4>
         <br>
         <img class="poster" src="assets/img/poster.jpg" alt="포스터">
     </div>
@@ -230,8 +230,9 @@
 <script src="js/scripts.js"></script>
 <script>
     function changeLocation(a){
-        // let scroll = document.documentElement.scrollTop;
-        window.scrollBy(0, window.innerHeight);
+        let height = window.innerHeight;
+        let remain = document.documentElement.scrollTop % height;
+        window.scrollBy(0, height - remain);
     }
 
     function changeModalBody(num) {
