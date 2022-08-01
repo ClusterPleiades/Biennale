@@ -14,14 +14,14 @@
 </head>
 <body id="page-top">
 <!-- Navigation-->
-<a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+<a class="menu-toggle rounded"><i class="fas fa-bars"></i></a>
 <nav id="sidebar-wrapper">
     <ul class="sidebar-nav">
-        <li class="sidebar-brand"><a href="#page-top">대구 사진 비엔날레</a></li>
-        <li class="sidebar-nav-item"><a href="#page-top">포스터</a></li>
-        <li class="sidebar-nav-item"><a href="#invitation">모시는 글</a></li>
-        <li class="sidebar-nav-item"><a href="#information">전시 안내</a></li>
-        <li class="sidebar-nav-item"><a href="#works">작품 소개</a></li>
+        <li style="font-family: apple_semi_bold,serif" class="sidebar-brand"><a href="#page-top">대구 사진 비엔날레</a></li>
+        <li style="font-family: apple_semi_bold,serif" class="sidebar-nav-item"><a href="#page-top">포스터</a></li>
+        <li style="font-family: apple_semi_bold,serif" class="sidebar-nav-item"><a href="#invitation">모시는 글</a></li>
+        <li style="font-family: apple_semi_bold,serif" class="sidebar-nav-item"><a href="#information">전시 안내</a></li>
+        <li style="font-family: apple_semi_bold,serif" class="sidebar-nav-item"><a href="#works">작품 소개</a></li>
     </ul>
 </nav>
 
@@ -31,16 +31,16 @@
         <h5 style="font-family: apple_semi_bold,serif">2022년 대구사진비엔날레 특별기획전</h5>
         <h1 style="font-family: apple_bold,serif">다음시선:변신</h1>
         <br><br>
-        <h1 style="font-family: apple_semi_bold,serif">ㅡ v3</h1>
+        <h1 style="font-family: apple_semi_bold,serif">ㅡ</h1>
         <h2 style="font-family: dream_extra_bold,serif">2022.08.23-09.25</h2>
-        <h4 style="font-family: apple_bold,serif">대구문화예술회관1-4전시실</h4>
+        <h4 style="font-family: apple_bold,serif">대구문화예술회관1-4전시실 v5</h4>
         <br>
         <img class="poster" src="assets/img/poster.jpg" alt="포스터">
     </div>
 </div>
 
 <!-- 모시는 글-->
-<!--<section class="content-section bg-light" id="about">-->
+<div class="content-section bg-light" id="invitation">
 <!--    <div class="container px-4 px-lg-5 text-center">-->
 <!--        <div class="row gx-4 gx-lg-5 justify-content-center">-->
 <!--            <div class="col-lg-10">-->
@@ -61,10 +61,14 @@
 <!--            </div>-->
 <!--        </div>-->
 <!--    </div>-->
-<!--</section>-->
+</div>
 
-<!-- Portfolio-->
-<section class="content-section" id="portfolio">
+<!-- 전시 안내-->
+<div class="content-section bg-light" id="information">
+</div>
+
+<!-- 작품 소개-->
+<div class="content-section" id="works">
     <div class="container px-4 px-lg-5 text-center">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-10">
@@ -159,7 +163,7 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-</section>
+</div>
 <section class="content-section-short" id="map">
     <div class="container px-4 px-lg-5 text-center">
         <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -217,13 +221,30 @@
 </div>
 
 <!-- Scroll to Top Button-->
-<a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+<a class="scroll-to-top rounded" onclick="changeLocation(this)"><i class="fas fa-angle-down"></i></a>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
 <script src="js/scripts.js"></script>
 
 <script>
+    function changeLocation(a){
+        // let scroll = document.documentElement.scrollTop; // 현재 스크롤바 위치
+        window.scrollBy(0, window.innerHeight);
+
+        // if(scroll >= document.getElementById("information").scrollTop)
+        //     a.setAttribute("href", "#works");
+        // else if(scroll >= document.getElementById("invitation").scrollTop)
+        //     a.setAttribute("href", "#information");
+        // else
+        //     a.setAttribute("href", "#invitation");
+        // <li style="font-family: apple_semi_bold,serif" className="sidebar-brand"><a href="#page-top">대구 사진 비엔날레</a></li>
+        // <li style="font-family: apple_semi_bold,serif" className="sidebar-nav-item"><a href="#page-top">포스터</a></li>
+        // <li style="font-family: apple_semi_bold,serif" className="sidebar-nav-item"><a href="#invitation">모시는 글</a></li>
+        // <li style="font-family: apple_semi_bold,serif" className="sidebar-nav-item"><a href="#information">전시 안내</a></li>
+        // <li style="font-family: apple_semi_bold,serif" className="sidebar-nav-item"><a href="#works">작품 소개</a></li>
+    }
+
     function changeModalBody(num) {
         const title = document.getElementById("modalTitle");
         const body = document.getElementById("modalBody");
@@ -271,28 +292,5 @@
         }
     }
 </script>
-
-<!--<script>-->
-<!--    function pause(){-->
-<!--        $('.carousel').each(function(){-->
-<!--            $(this).carousel({-->
-<!--                interval: false,-->
-<!--                pause: 'hover',-->
-<!--                wrap: false-->
-<!--            });-->
-<!--        });-->
-<!--    }-->
-<!--    $(document).ready(-->
-<!--        function () {-->
-<!--            $('.carousel').each(function(){-->
-<!--                $(this).carousel({-->
-<!--                    interval: false,-->
-<!--                    pause: 'hover',-->
-<!--                    wrap: false-->
-<!--                });-->
-<!--            });-->
-<!--        }-->
-<!--    );-->
-<!--</script>-->
 </body>
 </html>
