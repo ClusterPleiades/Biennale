@@ -47,7 +47,7 @@
     --bs-teal: #20c997;
     --bs-cyan: #0dcaf0;
     --bs-white: #fff;
-    --bs-gray: #6c757d;
+    --bs-gray: #ecececec;
     --bs-gray-dark: #343a40;
     --bs-gray-100: #f8f9fa;
     --bs-gray-200: #e9ecef;
@@ -75,6 +75,7 @@
     --bs-light-rgb: 248, 249, 250;
     --bs-dark-rgb: 33, 37, 41;
     --bs-white-rgb: 255, 255, 255;
+    --bs-gray-rgb: 236, 236, 236;
     --bs-black-rgb: 0, 0, 0;
     --bs-body-color-rgb: 33, 37, 41;
     --bs-body-bg-rgb: 255, 255, 255;
@@ -8528,6 +8529,11 @@ textarea.form-control-lg {
     background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
 
+.bg-gray {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-gray-rgb), var(--bs-bg-opacity)) !important;
+}
+
 .bg-dark {
     --bs-bg-opacity: 1;
     background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
@@ -8622,6 +8628,7 @@ textarea.form-control-lg {
 }
 
 .rounded-3 {
+    height: inherit;
     border-radius: 0.3rem !important;
 }
 
@@ -11997,7 +12004,7 @@ html {
     width: calc(100%);
     height: calc(100%);
     padding-top: 3rem;
-    /*padding-bottom: 4.5rem;*/
+    padding-bottom: 3rem;
 }
 
 .content-section-heading h2, .content-section-heading .h2 {
