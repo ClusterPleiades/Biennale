@@ -1,37 +1,11 @@
-## Welcome to GitHub Pages
+# Biennale
+Mobile Invitation for 2022 Daegu Photo Biennale Special Exhibition
+<br><br>
 
-You can use the [editor on GitHub](https://github.com/ClusterPleiades/Invitation/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+## About
+<img src="https://user-images.githubusercontent.com/81938036/182364776-9039dad4-96c4-40cd-b066-43e5a8684e56.png" width="256"> <img src="https://user-images.githubusercontent.com/81938036/182364778-7b4632cd-4047-498d-810d-ab4c83bd5204.png" width="256"> <img src="https://user-images.githubusercontent.com/81938036/182364779-81a951cb-7c72-43ff-bed9-65debcb63cd9.png" width="256">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<img src="https://user-images.githubusercontent.com/81938036/182364782-8a014b3f-3a91-485e-a391-609c60a267c3.png" width="256"> <img src="https://user-images.githubusercontent.com/81938036/182364785-15f76fb5-07d9-4cb4-8f64-d54e44c2e8bc.png" width="256">
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ClusterPleiades/Invitation/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+This project is a mobile invitation for the 2022 Daegu Photo Bienale Special Exhibition,  
+and is optimized for the in-app browser on Kakao Talk applications due to the nature of the invitation.
