@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>-->
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta property="og:title" content="2022 대구사진비엔날레 특별기획전">
     <meta property="og:description" content="다음시선:변신">
     <meta property="og:image" content="https://raw.githubusercontent.com/ClusterPleiades/Biennale/main/assets/img/poster.jpg">
@@ -32,7 +32,7 @@
         <h6 style="font-family: apple_semi_bold,serif">2022년 대구사진비엔날레 특별기획전</h6>
         <h1 style="font-family: apple_bold,serif">다음시선:변신</h1>
         <br>
-        <h1 style="font-family: apple_semi_bold,serif">ㅡV1</h1>
+        <h1 style="font-family: apple_semi_bold,serif">ㅡV2</h1>
         <h2 style="font-family: dream_extra_bold,serif">2022.08.23-09.25</h2>
         <h5 style="font-family: apple_bold,serif">대구문화예술회관 1-4 전시실</h5>
         <br>
@@ -247,12 +247,13 @@
     </div>
 </div>
 
-<a class="scroll-to-top rounded" onclick="changeLocation()"><i class="fas fa-angle-down"></i></a>
+<a class="scroll-up rounded" onclick="up()"><i class="fas fa-angle-up"></i></a>
+<a class="scroll-down rounded" onclick="down()"><i class="fas fa-angle-down"></i></a>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/scripts.js"></script>
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
         const disableScroll = () => {
             document.querySelector('body').addEventListener('touchmove', this.removeEvent, {passive: false});
             document.querySelector('body').addEventListener('onclick', this.removeEvent, {passive: false});
@@ -272,17 +273,12 @@
     })
 </script>
 <script>
-    // function share(){
-    //     const t = document.createElement("textarea");
-    //     document.body.appendChild(t);
-    //     t.value = window.location.href;
-    //     t.select();
-    //     document.execCommand('copy');
-    //     document.body.removeChild(t);
-    //     // alert('복사 완료!')
-    // }
+    function up() {
+        let height = -1 * window.innerHeight;
+        window.scrollBy(0, height);
+    }
 
-    function changeLocation() {
+    function down() {
         let height = window.innerHeight;
         // let remain = document.documentElement.scrollTop % height;
         // let change = height - remain;

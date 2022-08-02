@@ -41,7 +41,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Scroll to top button appear
     document.addEventListener('scroll', () => {
-        const scrollToTop = document.body.querySelector('.scroll-to-top');
+        const scrollToTop = document.body.querySelector('.scroll-up');
         if (document.documentElement.scrollTop > 100) {
             if (!scrollToTopVisible) {
                 fadeIn(scrollToTop);
