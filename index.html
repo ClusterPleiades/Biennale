@@ -32,7 +32,7 @@
         <h6 style="font-family: apple_semi_bold,serif">2022년 대구사진비엔날레 특별기획전</h6>
         <h1 style="font-family: apple_bold,serif">다음시선:변신</h1>
         <br>
-        <h1 style="font-family: apple_semi_bold,serif">ㅡ</h1>
+        <h1 style="font-family: apple_semi_bold,serif">ㅡV1</h1>
         <h2 style="font-family: dream_extra_bold,serif">2022.08.23-09.25</h2>
         <h5 style="font-family: apple_bold,serif">대구문화예술회관 1-4 전시실</h5>
         <br>
@@ -251,6 +251,26 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/scripts.js"></script>
+<script>
+    $(document).ready(function(){
+        const disableScroll = () => {
+            document.querySelector('body').addEventListener('touchmove', this.removeEvent, {passive: false});
+            document.querySelector('body').addEventListener('onclick', this.removeEvent, {passive: false});
+            document.querySelector('body').addEventListener('mousewheel', this.removeEvent, {passive: false});
+        };
+
+        const removeEvent = e => {
+            e.preventDefault();
+            e.stopPropagation();
+        };
+
+        const enableScroll = () => {
+            document.querySelector('body').removeEventListener('touchmove', this.removeEvent);
+            document.querySelector('body').removeEventListener('onclick', this.removeEvent);
+            document.querySelector('body').removeEventListener('mousewheel', this.removeEvent);
+        };
+    })
+</script>
 <script>
     // function share(){
     //     const t = document.createElement("textarea");

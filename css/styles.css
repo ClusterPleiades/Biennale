@@ -104,6 +104,10 @@
 }
 
 body {
+    overflow: hidden;
+    touch-action: none;
+    /*position: fixed;*/
+
     margin: 0;
     /*font-family: var(--bs-body-font-family);*/
     font-size: var(--bs-body-font-size);
