@@ -32,7 +32,7 @@
         <h6 style="font-family: apple_semi_bold,serif">2022년 대구사진비엔날레 특별기획전</h6>
         <h1 style="font-family: apple_bold,serif">다음시선:변신</h1>
         <br>
-        <h1 style="font-family: apple_semi_bold,serif">ㅡV9</h1>
+        <h1 style="font-family: apple_semi_bold,serif">ㅡV10</h1>
         <h2 style="font-family: dream_extra_bold,serif">2022.08.23-09.25</h2>
         <h5 style="font-family: apple_bold,serif">대구문화예술회관 1-4 전시실</h5>
         <br>
@@ -267,12 +267,16 @@
     }, {passive: false});
 
     function share(){
-        var content = document.getElementById('textArea');
+        let url = window.document.location.href;
 
-        content.select();
-        document.execCommand('copy');
+        const textarea = document.createElement("textarea");
+        document.body.appendChild(textarea);
+        textarea.value = url;
+        textarea.select();
 
-        alert("Copied!");
+        document.execCommand("copy");
+        document.body.removeChild(textarea);
+        alert("URL이 복사되었습니다.");
     }
 
     function up() {
