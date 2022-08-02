@@ -12001,19 +12001,21 @@ textarea.form-control-lg {
 
 body,
 html {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    /*width: 100%;*/
+    /*height: 100%;*/
 }
 
 .content-section {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 }
 .content-footer {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     padding-top: 2.5rem;
 }
 
