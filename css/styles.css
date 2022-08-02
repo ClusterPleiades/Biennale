@@ -89,6 +89,7 @@
     --bs-body-line-height: 1.5;
     --bs-body-color: #212529;
     --bs-body-bg: #fff;
+    --vh: 1vh;
 }
 
 *,
@@ -12001,21 +12002,26 @@ textarea.form-control-lg {
 
 body,
 html {
-    width: 100vw;
-    height: 100vh;
-    /*width: 100%;*/
-    /*height: 100%;*/
+    /*width: 100vw;*/
+    /*height: calc(var(--vh, 1vh) * 100);*/
+    /*height: 100vh;*/
+    width: 100%;
+    height: 100%;
 }
 
 .content-section {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    /*width: 100vw;*/
+    /*height: calc(var(--vh, 1vh) * 100);*/
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 }
 .content-footer {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    /*width: 100vw;*/
+    /*height: calc(var(--vh, 1vh) * 100);*/
     padding-top: 2.5rem;
 }
 
