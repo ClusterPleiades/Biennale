@@ -12,10 +12,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet"/>
     <link href="css/styles.css" rel="stylesheet"/>
 </head>
-<body id="page-top">
-<iframe style="display: none" width="0" height="0" allow="autoplay"
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/605009682&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false"></iframe>
 
+<body id="page-top">
 <!-- Navigation-->
 <!--<a class="menu-toggle rounded"><i class="fas fa-bars"></i></a>-->
 <!--<nav id="sidebar-wrapper">-->
@@ -34,7 +32,7 @@
         <h6 style="font-family: apple_semi_bold,serif">2022년 대구사진비엔날레 특별기획전</h6>
         <h1 style="font-family: apple_bold,serif">다음시선:변신</h1>
         <br>
-        <h1 style="font-family: apple_semi_bold,serif">ㅡ</h1>
+        <h1 style="font-family: apple_semi_bold,serif">ㅡa</h1>
         <h2 style="font-family: dream_extra_bold,serif">2022.08.23-09.25</h2>
         <h5 style="font-family: apple_bold,serif">대구문화예술회관 1-4 전시실</h5>
         <br>
@@ -249,11 +247,36 @@
     </div>
 </div>
 
+<a class="bgm rounded" onclick="play()" id="playButton" style="display: block"><i class="fas fa-volume-mute"></i></a>
+<a class="bgm rounded" onclick="play()" id="pauseButton" style="display: none"><i class="fas fa-volume-up"></i></a>
+
 <a class="scroll-up rounded" onclick="up()"><i class="fas fa-angle-up"></i></a>
 <a class="scroll-down rounded" onclick="down()"><i class="fas fa-angle-down"></i></a>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/scripts.js"></script>
+<script>
+    const playButton = document.getElementById("playButton");
+    const pauseButton = document.getElementById("pauseButton");
+    const myAudio = new Audio();
+    myAudio.src = "assets/bgm.mp3";
+
+    let playing = false;
+
+    function play() {
+        if (playing) {
+            myAudio.pause();
+            playButton.style.display = "block";
+            pauseButton.style.display = "none";
+        } else {
+            myAudio.play();
+            playButton.style.display = "none";
+            pauseButton.style.display = "block";
+        }
+        playing = !playing;
+    }
+</script>
+
 <script>
     document.addEventListener("touchmove", function (event) {
         event.preventDefault();
