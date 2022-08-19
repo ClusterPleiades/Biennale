@@ -5,7 +5,7 @@ Mobile Invitation for 2022 Daegu Photo Biennale Special Exhibition
 ## Release
 <img src="https://user-images.githubusercontent.com/81938036/182368978-adbb66c2-29e6-4a4e-abc4-3395e492d148.png" width="64">
 <a href="https://clusterpleiades.github.io/Biennale/">
-  <img src="https://img.shields.io/badge/Version-3.3-purple">
+  <img src="https://img.shields.io/badge/Version-3.3.1-purple">
 </a>
 <br><br>
 
